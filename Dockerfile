@@ -10,7 +10,7 @@ WORKDIR /source
 COPY . ./dotnetcore-docs-hello-world/
 
 WORKDIR /source/dotnetcore-docs-hello-world
-RUN dotnet publish -c release -o /app 
+RUN dotnet publish -c release -o /app   #creates .dll
 
 # final stage/image
 
